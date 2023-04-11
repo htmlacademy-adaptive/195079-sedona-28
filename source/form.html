@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header__logo"  href="https://htmlacademy.ru">
+        <img class="header__logo-image" src="/source/img/logo.svg"  width="185" height="96" alt="логотип седона">
+      </a>
+      <nav class="nav">
+        <div class="nav__wrapper">
+          <ul class="nav__list site-list">
+            <li class="nav__list-item nav__list-item--current">Главная</li>
+            <li сlass="nav__list-item">
+              <a class="nav__list-item-link" href="#">Фото и видео</a></li>
+            <li class="nav__list-item">
+              <a class="nav__ist-item-link nav__list-item--current" href="#">Форма отзыва</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-item-link" href="https://htmlacademy.ru">Html academy</a>
+            </li>
+          </ul>
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span></button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-form">
+        <h1 class="visually-hidden">Страница отзывов</h1>
+        <img class="hero__image--form" src="/source/img/hero-form__image.png" width="1200" height="518" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
+      </section>
+      <section class="feedback">
+        <div class="feedback__wrapper ">
+          <h2 class="feedback__title">Оставьте свой отзыв</h2>
+          <p class="feedback__paragraph">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="form__column">
+            <legend class="form__title">Представьтесь:</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="form__span">Имя*:</span>
+                  <!--стоит ли ниже и далее добавлять класс с модификатором --required чтоб был еще класс form__input--required или это лишнее?-->
+                  <input class="form__input" type="text" value="Пётр" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="form__span">Фамилия*:</span>
+                  <input class="form__input form__input--required" type="text" value="Пустота" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="form__span">Отчество:</span>
+                  <input class="form__input" type="text" value="Викторович">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__column">
+            <legend class="form__title">Контактная информация</legend>
+            <ul class="form__list">
+              <li class="form__item">>
+                <label class="form__label">
+                  <span class="form__span">Контактный телефон*:</span>
+                  <input class="form__input" type="tel" placeholder="Введите номер" required>
+                  <img class="form__icon" src="phone-icon.png" alt="Телефон">
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="form__span">Электронная почта*:</span>
+                  <input class="form__input" type="email" placeholder="Введите e-mail" required>
+                  <img class="form__icon" src="email-icon.png" alt="Почта">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+  <fieldset class="form__column">
+    <legend class="form__title">Ваше общее впечатление</legend>
+    <div class="form__radio-group">
+      <label><input type="radio" name="impression" value="positive" checked> Скорее положительное</label>
+      <label><input type="radio" name="impression" value="negative"> Скорее отрицательное</label>
+      <label><input type="radio" name="impression" value="neutral"> Затрудняюсь ответить</label>
+    </div>
+  </fieldset>
+  <fieldset class="form__column">
+    <legend class="form__title">Посещенные достопримечательности</legend>
+    <div class="form__checkbox-group">
+      <label><input type="checkbox" name="attraction1" value="bridge" checked> Мост дьявола</label>
+      <label><input type="checkbox" name="attraction2" value="mountain" checked> Гора-Колокол</label>
+      <label><input type="checkbox" name="attraction3" value="park" checked> Слайд-парк</label>
+      <label><input type="checkbox" name="attraction4" value="rocks"> Красные скалы</label>
+    </div>
+  </fieldset>
+
+  <fieldset class="form__column">
+    <legend class="form__title">Опишите свои эмоции:</legend>
+    <textarea class="form__textarea" placeholder="Напишите здесь"></textarea>
+  </fieldset>
+  <div class="form__column">
+    <button class="form__button" type="submit">Отправить отзыв</button>
+    <p class="form__note">* - обязательные поля</p>
+  </div>
+</form>
+        </main>
+          <footer class="footer">
+            <div class="footer__contacts">
+              <a class="footer__copyright-link" href="#">#visitsedona</a>
+            </div>
+            <div class="footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link  social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link  social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+                <li class="social__item">
+                  <a class="social__link  social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+                </li>
+            </div>
+            <div class="footer__copyright copyright">
+              <b class="copyright__text">Разработано:</b>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </div>
+        </footer>
+      </body>
+    </html>
+
