@@ -13,7 +13,7 @@
       <nav class="nav">
         <div class="nav__wrapper">
           <ul class="nav__list site-list">
-            <li class="nav__list-item nav__list-item--current">Главная</li>
+            <li class="nav__list-item">Главная</li>
             <li сlass="nav__list-item">
               <a class="nav__list-item-link" href="#">Фото и видео</a></li>
             <li class="nav__list-item">
@@ -30,7 +30,7 @@
     </header>
 
     <main>
-      <section class="hero-form">
+      <section class="hero">
         <h1 class="visually-hidden">Страница отзывов</h1>
         <img class="hero__image--form" src="/source/img/hero-form__image.png" width="1200" height="518" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
       </section>
@@ -46,7 +46,6 @@
               <li class="form__item">
                 <label class="form__label">
                   <span class="form__span">Имя*:</span>
-                  <!--стоит ли ниже и далее добавлять класс с модификатором --required чтоб был еще класс form__input--required или это лишнее?-->
                   <input class="form__input" type="text" value="Пётр" required>
                 </label>
               </li>
@@ -70,15 +69,13 @@
               <li class="form__item">>
                 <label class="form__label">
                   <span class="form__span">Контактный телефон*:</span>
-                  <input class="form__input" type="tel" placeholder="Введите номер" required>
-                  <img class="form__icon" src="phone-icon.png" alt="Телефон">
+                  <input class="form__input form__icon--email" type="tel" placeholder="Введите номер" required>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__label">
                   <span class="form__span">Электронная почта*:</span>
-                  <input class="form__input" type="email" placeholder="Введите e-mail" required>
-                  <img class="form__icon" src="email-icon.png" alt="Почта">
+                  <input class="form__input form__icon--phone" type="email" placeholder="Введите e-mail" required>
                 </label>
               </li>
             </ul>
@@ -86,9 +83,12 @@
   <fieldset class="form__column">
     <legend class="form__title">Ваше общее впечатление</legend>
     <div class="form__radio-group">
-      <label><input type="radio" name="impression" value="positive" checked> Скорее положительное</label>
-      <label><input type="radio" name="impression" value="negative"> Скорее отрицательное</label>
-      <label><input type="radio" name="impression" value="neutral"> Затрудняюсь ответить</label>
+      <label>
+        <input type="radio" name="impression" value="positive" checked> Скорее положительное</label>
+      <label>
+        <input type="radio" name="impression" value="negative"> Скорее отрицательное</label>
+      <label>
+        <input type="radio" name="impression" value="neutral"> Затрудняюсь ответить</label>
     </div>
   </fieldset>
   <fieldset class="form__column">
